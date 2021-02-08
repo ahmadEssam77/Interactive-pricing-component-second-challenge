@@ -1,0 +1,23 @@
+body {
+    background-image: 
+        url(./images/pattern-circles.svg),
+        url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position-x: 50%, 0;
+    background-position-y: 7vh, 0;  
+}
+
+
+/* Media Query (Mobile First) */
+@media (max-width: 1440px) {
+    body {
+        background-image: 
+            url(./images/pattern-circles.svg),
+            url(./images/bg-pattern.svg);
+        background-repeat: no-repeat;
+        background-size: auto, auto;
+        background-position-x: 50%, 0;
+        background-position-y: 7vh, 0; 
+    }
+}
