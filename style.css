@@ -23,7 +23,8 @@ body {
 /* Wrapper Container Style */
 .wrapper-container {
     border: 1px solid #fff;
-    width: 400px;
+    width: 500px;
+    /* width: 35%; */
     height: 350px;
     position: absolute;
     top: 60%;
@@ -41,7 +42,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 30px 10px;
+    padding: 30px 0;
 }
 
 /* Style The Price */
@@ -58,7 +59,8 @@ body {
 }
 
 .my-slider {
-    width: 320px;    
+    /* width: 400px; */
+    width: 80%;
 }
 
 /* Styling The Toggle Btn, Discount, and Stuff */
@@ -67,7 +69,8 @@ body {
     justify-content: flex-end;
     align-items: center;
     font-size: 11px;
-    padding: 0 40px 30px 0;
+    /* padding: 0 70px 30px 0; */
+    padding: 0 13% 6% 0;
 }
 
 /* Toggle Btn Div */ 
@@ -147,6 +150,7 @@ body {
 
 
 /* Media Query (Mobile First) */
+/* For the Background and The Main Div (text above the wrapper) */
 @media (max-width: 1440px) {
     body {
         background-image: 
@@ -168,13 +172,59 @@ body {
         line-height: 27px;
     }
 
-    /* The Wrapper or the Container */
-    /* .wrapper-container {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin: 0 30px;
-    } */
+}
 
+/* For The Wrapper when its 600px */
+@media (max-width: 600px) {
+    .wrapper-container {
+        width: 350px;
+        height: auto;
+    }
+}
+
+/* For The Wrapper and when its 375px + the components inside it */
+
+@media (max-width: 375px) {
+    .wrapper-container {
+        height: auto;
+        width: 300px;
+    }
+
+    .views {
+        padding-bottom: 20px;
+    }
+
+    .views-and-pricing, .footer-div {
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .toggle-btn-discount-and-stuff {
+        width: 100%;
+        margin-left: -6px;
+    }
+
+    .toggle-btn {
+        padding: 0 7px;
+    }
+    
+    .monthly-billing, .discount, .toggle-btn {
+        margin: 0;
+    }
+
+    .footer-div .right-side-btn {
+        padding-top: 10px;
+    }
+
+    /* Changing the place of Slider and The Price div */
+    .wrapper-container .slider {
+        position: relative;
+        top: -50px;
+    }
+
+    .wrapper-container .views-and-pricing .pricing {
+        position: relative;
+        top: 50px;
+    }
 }
