@@ -19,11 +19,11 @@
   <!-- Wrapper Container -->
   <div class="wrapper-container">
     <div class="views-and-pricing">
-      <div class="views" style="font-size: 14px;">100k PAGEVIEWS</div>
-      <div class="pricing"><span class="the-price">$16.00 </span>/ month</div>
+      <div class="views" style="font-size: 14px;"><span id="views-digit">100k</span> PAGEVIEWS</div>
+      <div class="pricing"><span class="the-price">$<span id="cost">16</span>.00</span> / month</div>
     </div>
     <div class="slider">
-      <input type="range" class="my-slider">
+      <input type="range" min="8" max="36" step="4" value="16" id="my-slider-id" class="my-slider">
     </div>
     <div class="toggle-btn-discount-and-stuff">
       <div class="monthly-billing">Monthly Billing</div>
@@ -50,5 +50,6 @@
     </div>
   </div>
 
+  <script src="main.js"></script>
 </body>
 </html>

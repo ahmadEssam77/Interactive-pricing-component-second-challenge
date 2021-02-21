@@ -61,6 +61,31 @@ body {
 .my-slider {
     /* width: 400px; */
     width: 80%;
+    -webkit-apperance: none;
+    appearance: none;
+    background: linear-gradient(90deg, hsl(174, 86%, 45%) 20%, hsl(224, 65%, 95%) 60%);
+    /* color: hsl(174, 86%, 45%); */
+    height: 9px;
+    border-radius: 12px;
+    outline: none;
+    /* -webkit-transition: 0.2s;
+    transition: opacity 0.2s; */
+}
+
+/* For The Thumb */
+.my-slider::-webkit-slider-thumb {
+    -webkit-apperance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    background: hsl(174, 86%, 45%);
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url(./images/icon-slider.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
 }
 
 /* Styling The Toggle Btn, Discount, and Stuff */
@@ -146,6 +171,7 @@ body {
     padding: 10px;
     font-size: 11px;
     cursor: pointer;
+    outline: none;
 }
 
 
@@ -171,6 +197,7 @@ body {
         margin: 0 75px;
         line-height: 27px;
     }
+    
 
 }
 
@@ -186,8 +213,9 @@ body {
 
 @media (max-width: 375px) {
     .wrapper-container {
-        height: auto;
         width: 300px;
+        height: auto;
+        margin-top: 30px;        
     }
 
     .views {
