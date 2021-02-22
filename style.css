@@ -1,5 +1,6 @@
 body {
     background-color: hsl(230, 100%, 99%);
+    font-size: 25px;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     /* width: 35%; */
     height: 350px;
     position: absolute;
-    top: 60%;
+    top: 43%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: sans-serif;
@@ -206,6 +207,9 @@ body {
     .wrapper-container {
         width: 350px;
         height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
@@ -215,7 +219,10 @@ body {
     .wrapper-container {
         width: 300px;
         height: auto;
-        margin-top: 30px;        
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
     }
 
     .views {
